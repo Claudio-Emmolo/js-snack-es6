@@ -62,8 +62,21 @@ const zucchineList = [
 
 let calc = 0;
 
+let totalSize = 0;
+
+let pesoMed = 0;
+
+let sizeMed = 0;
+
 for (let i = 0 ; i < zucchineList.length ; i++){
     calc += zucchineList[i]['peso'];
+    totalSize += zucchineList[i]['size'];
 }
 
-console.log('Le zucchine pesano in totale: ' + calc.toFixed(2) + 'Kg');
+pesoMed = calc / 10;
+
+sizeMed = totalSize / 10;
+
+console.log('Le zucchine pesano in totale: ' + calc.toFixed(2) + ' Kg');
+console.log('Il peso medio è: ' + pesoMed.toFixed(2) + ' Kg');
+console.log('La lunghezza media è di: ' + sizeMed.toFixed(2) + ' cm');
