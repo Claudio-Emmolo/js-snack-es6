@@ -79,6 +79,6 @@ for (let i = 0 ; i < veicleList.length ; i++){
 
 }
 
-console.log(`Benzina ${benzina}`);
-console.log(`Diesel ${diesel}`);
-console.log(`Other ${otherAlimentation}`);
+console.log (benzina)
+console.log(diesel);
+console.log(otherAlimentation);
