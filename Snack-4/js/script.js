@@ -19,7 +19,6 @@ const animalsList = [
 ]
 
 
-
 const mammiferoList = animalsList.filter((animal) =>{
     if (animal.classe === 'mammiferi'){
         return true;
@@ -27,4 +26,11 @@ const mammiferoList = animalsList.filter((animal) =>{
     return false;
 });
 
+const mammiferiUppercase = mammiferoList.map((mammifero) =>{
+    mammifero.nome = mammifero.nome.charAt(0) + mammifero.nome.substring(1).toUpperCase();
+    return mammifero;
+});
+
 console.log (mammiferoList);
+console.log (mammiferiUppercase);
+
