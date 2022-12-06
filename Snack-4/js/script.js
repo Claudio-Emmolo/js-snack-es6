@@ -28,6 +28,9 @@ const mammiferoList = animalsList.filter((animal) =>{
 
 const mammiferiUppercase = mammiferoList.map((mammifero) =>{
     mammifero.nome = mammifero.nome.charAt(0) + mammifero.nome.substring(1).toUpperCase();
+    mammifero.famiglia = mammifero.famiglia.charAt(0) + mammifero.famiglia.substring(1).toUpperCase();
+    mammifero.classe = mammifero.classe.charAt(0) + mammifero.classe.substring(1).toUpperCase();
+
     return mammifero;
 });
 
